@@ -11,6 +11,9 @@ touch  /etc/apache2/sites-available/soldier.conf
 echo "Permission denied" >> /var/www/soldier/permdenied.html
 echo "Records" >> touch  /var/www/soldier/records.html
 
+#add soldier to etc/hosts
+echo "127.0.0.1 www.soldier.io" >> /etc/hosts
+
 #make virtual hosts file
 echo """<VirtualHost *:80>
     ServerAdmin webmaster@localhost
