@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} !^.*(chiefsuseragent).*$
+RewriteRule ^records.html$ permdenied.html
+RewriteRule ^$ permdenied.html
+RewriteRule ^index.php$ permdenied.html [R,L]
+RewriteRule ^(.*)/index.html$ /~$1/index.html [R,L]
+
